@@ -40,7 +40,7 @@ function Sidebar() {
      
     
    
-    <button type="submit" className='button-logout'  onClick={()=>{localStorage.removeItem('token');navigate('/Login');} }>
+    <button type="submit" className='button-logout'  onClick={()=>{localStorage.removeItem('token');localStorage.removeItem('id') ;navigate('/Login');} }>
         Log out</button>
     <button type="submit"className='button-switch'>Switch to employee</button>
     
